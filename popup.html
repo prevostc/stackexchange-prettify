@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        body {
+            width: 600px;
+            height: 400px;
+        }
+        #buttons {
+            display: flex;
+        }
+        button {
+            box-sizing: border-box;
+            padding: 5px;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script src="node_modules/prettier-standalone/bundle.js"></script>
+  </head>
+  <body>
+        <div class="container">
+            <div id="buttons"></div>
+            <p id="output"></p>
+            <button id="setSelection" class="hidden">Send Selection</button>
+        </div>
+  </body>
+  <script src="popup.js"></script>
+</html>
